@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+  body
+      - var names=['Home','Leaflet Maps','Election Night','uReport.it','Purchase'];
+      - var pages=['index','leaflet','election','ureport','purchase'];
+    
+      nav(class='navbar navbar-default')
+        div.navbar-header
+          a.navbar-brand Etothepii Ltd
+        div(class='collapse navbar-collapse')
+          ul(class='nav navbar-nav')
+            - for (var i = 0; i < names.length; i++) {
+              - if(title==pages[i]) {
+                li.active
+                  a.active(href=pages[i])
+                    =names[i]
+              - }
+              - else {
+                li
+                  a(href=pages[i])
+                    =names[i]
+              - }    
+            - }
+      block content        
