@@ -29,7 +29,11 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/index', routes.index);
+app.get('/election', routes.election);
+app.get('/leaflet', routes.leaflet);
+app.get('/purchase', routes.purchase);
+app.get('/ureport', routes.ureport);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
