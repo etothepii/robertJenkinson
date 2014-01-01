@@ -5,21 +5,137 @@ block header
   h1 #{name} 
 
 block summary
-  p Some data about our leaflet map software
+  p Get access to our products and services.
 
 block content
   div(class='panel panel-default')
     div.panel-heading
-      | Ward pricing
+      | Free Samples
     div.panel-body
-      | £50 reduced to £20, £10 down to £4 for reprints
+      p We believe in our services. We believe that they sell themselves and 
+        | that those involved with political campaigning at all levels will 
+        | immediately see their value. Therefore we will provide the route maps 
+        | for the most electorally difficult ward in any constituency to you for 
+        | free so you can see if what we are providing will really work for you.
+      p If you would like to see how the improved Ordnance Survey data would 
+        | improve our maps we are able to provide this on a three month trial 
+        | basis due to our relationship with them as a reseller.
   div(class='panel panel-default')
     div.panel-heading
-      | Constituency Pricing
-    div.panel-body
-      | £250 reduced to £100, £50 down to £20 for reprints (with unique QR codes)
+      | Initial Drafting
+    table.table
+      tr
+        th.price-table-item Item
+        th Price
+      tr
+        td.price-table-item County / Borough Council Ward	
+        td
+          span.rrp £50 
+          span.price £20
+      tr
+        td.price-table-item UK Parliamentary Constituency
+        td
+          span.rrp £250 
+          span.price £100
+      tr
+        td.price-table-item Splitting electoral wards by Polling District
+        td 40% Uplift
+      tr
+        td.price-table-item Ordnance Survey Data
+        td Cost + 5% to cover administration
+  div(class='panel panel-default')
+    div.panel-heading
+      | QR Coded reprint and Web service
+    table.table
+      tr
+        th Item
+        th Price
+      tr
+        td.price-table-item County / Borough Council Ward (per reprint)	
+        td
+          span.rrp £20 
+          span.price £4
+      tr
+        td.price-table-item County / Borough Council Ward (per month)	
+        td
+          span.rrp £10 
+          span.price £2 for first six months
+      tr
+        td.price-table-item UK Parliamentary Constituency (per reprint)
+        td
+          span.rrp £100 
+          span.price £20 
+      tr
+        td.price-table-item UK Parliamentary Constituency (per month)
+        td
+          span.rrp £50
+          span.price £2 for the first twelve months 
+  div(class='panel panel-default')
+    div.panel-heading
+      | Non-QR Coded reprints with updated dwellings
+    table.table
+      tr
+        th.price-table-item Item
+        th Price
+      tr
+        td.price-table-item County / Borough Council Ward (per reprint)	
+        td
+          span.rrp £10 
+          span.price £2
+      tr
+        td.price-table-item County / Borough Council Ward (per month)	
+        td
+          span.rrp £5 
+          span.price £1 for first six months
+      tr
+        td.price-table-item UK Parliamentary Constituency (per reprint)
+        td
+          span.rrp £50 
+          span.price £10 
+      tr
+        td.price-table-item UK Parliamentary Constituency (per month)
+        td
+          span.rrp £25 
+          span.price £5 for the first twelve months 
   div(class='panel panel-default')        
     div.panel-heading
-      | Election night
+      | Election Night Software
     div.panel-body
-      | Price on Appointment
+      p Our election night software is getting ready for its beta release and 
+        | we are looking for a small number of associations to provide feedback 
+        | on our product and its usage. Thus we are providing it for free for 
+        | all by-elections held in 2014. Those providing the best feedback will 
+        | also receive the software for free for use in the Euro and local
+        | Election in 2014 and on General Election night 2015.
+  div(class='panel panel-default')        
+    div.panel-heading
+      | Enquiry Form
+    div.panel-body
+      p If you are interested in any of the products or services listed on this 
+        | site then please submit the expression of interest form below and we 
+        | will get back to you as soon as possible.
+      form
+        table.table
+          tr
+            td.price-table-item Name:
+            td
+              input(type='text', name='name', width='100')
+          tr
+            td.price-table-item E-mail Address:
+            td
+              input(type='email', name='email', width='100')
+          tr
+            td.price-table-item Confirm E-mail Address:
+            td
+              input(type='email', name='emailconf', width='100')
+          tr
+            td.price-table-item Political Affiliation:
+            td
+              input(type='text', name='party', width='100')
+          tr
+            td.price-table-item Enquiry:
+            td
+              textarea(rows='8', cols='100')
+          tr
+            td(colspan='2')
+              input(type='submit')
