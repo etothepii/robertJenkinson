@@ -5,3 +5,23 @@ body {
 a {
   color: #00B7FF;
 }
+
+.rrp {
+    color: #f00;
+    text-decoration:line-through;
+    padding: 0 5px 0 0;
+}
+
+.price-table-item {
+    width: 400px;
+}
+
+input {
+    width: 100%;
+}
+
+.legal-footer {
+    text-align:center;
+    padding:10px 0 0 0;
+    color: #999;
+}
