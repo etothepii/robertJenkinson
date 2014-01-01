@@ -1,5 +1,25 @@
-- var pageTitle='ureport'
+
 extends layout
- 
+
+block header
+  h1 #{name} 
+
+block summary
+  p Some data about our leaflet map software
+
 block content
-  | This is the uReport.it page
+  div(class='panel panel-default')
+    div.panel-heading
+      | Direct access
+    div.panel-body
+      | Allow constituents to contact you directly
+  div(class='panel panel-default')
+    div.panel-heading
+      | Mobile
+    div.panel-body
+      | Easy to use mobile applications
+  div(class='panel panel-default')        
+    div.panel-heading
+      | Action Lists
+    div.panel-body
+      | Build contact lists around issues

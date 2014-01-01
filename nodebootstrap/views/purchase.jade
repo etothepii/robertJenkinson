@@ -1,5 +1,25 @@
-- var pageTitle='purchase'
+
 extends layout
- 
+
+block header
+  h1 #{name} 
+
+block summary
+  p Some data about our leaflet map software
+
 block content
-  | This is the Purchase page
+  div(class='panel panel-default')
+    div.panel-heading
+      | Ward pricing
+    div.panel-body
+      | £50 reduced to £20, £10 down to £4 for reprints
+  div(class='panel panel-default')
+    div.panel-heading
+      | Constituency Pricing
+    div.panel-body
+      | £250 reduced to £100, £50 down to £20 for reprints (with unique QR codes)
+  div(class='panel panel-default')        
+    div.panel-heading
+      | Election night
+    div.panel-body
+      | Price on Appointment

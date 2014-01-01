@@ -1,5 +1,25 @@
-- var pageTitle='index'
+
 extends layout
- 
+
+block header
+  h1 #{name} 
+
+block summary
+  p Some data about who we are
+
 block content
-  | This is the Home page
+  div(class='panel panel-default')
+    div.panel-heading
+      | Who we are
+    div.panel-body
+      | Small team dedicated to getting political associations to communicate and process their election data as effectively as possible.
+  div(class='panel panel-default')
+    div.panel-heading
+      | Passionate about open source
+    div.panel-body
+      | all our software is open source so you can fork it on github and make amendments to it if your association is lucky enough to have some talented computer activists.
+  div(class='panel panel-default')        
+    div.panel-heading
+      | Political Neutrality
+    div.panel-body
+      | Software built for Conservative Party but open to all and further half price for Independent candidates.
