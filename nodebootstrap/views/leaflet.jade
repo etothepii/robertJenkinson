@@ -1,5 +1,25 @@
-- var pageTitle='leaflet'
+
 extends layout
- 
+
+block header
+  h1 #{name} 
+
+block summary
+  p Some data about our leaflet map software
+
 block content
-  | This is the Leaflet Map page
+  div(class='panel panel-default')
+    div.panel-heading
+      | Delivery Network Teams
+    div.panel-body
+      | Important to campaign effectively and to allow candidates and passionate activists to talk to the electorate through canvassing and street surgeries.
+  div(class='panel panel-default')
+    div.panel-heading
+      | Delegation
+    div.panel-body
+      | An effective set of delivery maps make delegation easier. 
+  div(class='panel panel-default')        
+    div.panel-heading
+      | Tracking
+    div.panel-body
+      | Leveraging QR codes allows for the Campaign team to track who is actually campaigning.

@@ -1,5 +1,25 @@
-- var pageTitle='election'
+
 extends layout
- 
+
+block header
+  h1 #{name} 
+
+block summary
+  p Some data about our leaflet map software
+
 block content
-  | This is the Election Night software page
+  div(class='panel panel-default')
+    div.panel-heading
+      | Quick and Accurate Tallying
+    div.panel-body
+      | Our android app makes tallying votes on election night simple and quick
+  div(class='panel panel-default')
+    div.panel-heading
+      | Reporting
+    div.panel-body
+      | Results can be transmitted in real time to the agent’s computer to bring potentially close results to their attention quickly
+  div(class='panel panel-default')        
+    div.panel-heading
+      | CSV Export
+    div.panel-body
+      | Sending detailed results back to the central party offices to allow for spokesmen to strike the right tone when communicating with the media.

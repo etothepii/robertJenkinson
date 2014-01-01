@@ -9,23 +9,32 @@ html
   body
       - var names=['Home','Leaflet Maps','Election Night','uReport.it','Purchase'];
       - var pages=['index','leaflet','election','ureport','purchase'];
-    
-      nav(class='navbar navbar-default')
-        div.navbar-header
-          a.navbar-brand
-            img(src='images/logo38.png', style='margin: -15px -9px -15px -9px')
-        div(class='collapse navbar-collapse')
-          ul(class='nav navbar-nav')
-            - for (var i = 0; i < names.length; i++) {
-              - if(title==pages[i]) {
-                li.active
-                  a.active(href=pages[i])
-                    =names[i]
+    header(class='navbar-inverse navbar-fixed-top')  
+      nav.navbar-inverse
+        div.container
+          div.navbar-header
+            a.navbar-brand
+              img(src='images/logo38.png', style='margin: -15px -9px -15px 0px')
+          div(class='collapse navbar-collapse')
+            ul(class='nav navbar-nav')
+              - for (var i = 0; i < names.length; i++) {
+                - if(title==pages[i]) {
+                - var name=names[i]; 
+                  li.active
+                    a.active(href=pages[i])
+                      =names[i]
+                - }
+                - else {
+                  li
+                    a(href=pages[i])
+                      =names[i]
+                - }    
               - }
-              - else {
-                li
-                  a(href=pages[i])
-                    =names[i]
-              - }    
-            - }
+    div.navbar-inverse(style='margin:50px 0px 20px 0px')          
+      div.container
+        div.navbar-brand(style='color:#fff')
+          block header   
+          div(style='color:#999')
+            block summary
+    div.container
       block content        
