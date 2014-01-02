@@ -1,6 +1,8 @@
 doctype html
 html
   head
+    title Etothepii Ltd
+    link(rel='icon', href='/images/logo38.png', type='image/png')
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
@@ -9,7 +11,7 @@ html
   body
       - var names=['Home','Leaflet Maps','Election Night','uReport.it','Purchase'];
       - var pages=['index','leaflet','election','ureport','purchase'];
-    header(class='navbar-inverse navbar-fixed-top')  
+    header(class='navbar navbar-inverse navbar-fixed-top')  
       nav.navbar-inverse
         div.container
           div.navbar-header
@@ -37,4 +39,10 @@ html
           div(style='color:#999')
             block summary
     div.container
-      block content        
+      block content   
+    
+    footer(class='navbar-inverse navbar-fixed-bottom')  
+      nav.navbar-inverse
+        div.container
+          p.legal-footer Etothepii Ltd - 40 Westcott House, Canary Wharf, London, E14 0DG - 
+            | Registered in England and Wales - Company No 07329588
