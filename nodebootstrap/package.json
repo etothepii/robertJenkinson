@@ -1,5 +1,6 @@
 {
-  "name": "application-name",
+  "author": "James P. Robinson"
+  "name": "robertjenkinson",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,6 +8,14 @@
   },
   "dependencies": {
     "express": "3.4.7",
-    "jade": "*"
+    "jade": "*",
+    "validator": "0.4.11",
+    "sendgrid": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest"
+  },
+  "engines": {
+    "node": "0.8.9"
   }
 }
