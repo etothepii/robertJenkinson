@@ -22,3 +22,7 @@ exports.purchase = function(req, res){
 exports.ureport = function(req, res){
   res.render('ureport', { title: 'ureport' });
 };
+
+exports.mail = function(req, res) {
+  res.render('mail', { title: 'mail' });
+};
