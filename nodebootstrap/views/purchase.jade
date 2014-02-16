@@ -114,7 +114,7 @@ block content
       p If you are interested in any of the products or services listed on this 
         | site then please submit the expression of interest form below and we 
         | will get back to you as soon as possible.
-      form
+      form(action="/mail", method="POST")
         table.table
           tr
             td.price-table-item Name:
@@ -135,7 +135,7 @@ block content
           tr
             td.price-table-item Enquiry:
             td
-              textarea(rows='8', cols='100')
+              textarea(rows='8', cols='100', name='content')
           tr
             td(colspan='2')
               input(type='submit')
